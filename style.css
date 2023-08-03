@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: voyage;
+    text-decoration: none;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    background: #655C4A;
+    padding: 2rem 3rem 0;
+    position: relative;
+}
+
+.nav_icon {
+    color: whitesmoke;
+    font-size: 1.6vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.n__right {
+    display: flex;
+    gap: 2rem;   
+}
+.n__right a {
+    color: whitesmoke;
+    letter-spacing: 1.3px;
+}
+
+
+/* Content */
+
+.content {
+    height: calc(100vh - 25vh);
+    display: flex;
+}
+
+.left {
+    width: 50vw;
+    height: 100%;
+    padding-left: 9vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.left_child {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+}
+
+.left_child h5 {
+    color: white;
+    font-size: 1.4vw;
+}
+
+.left_child > h5 > .line {
+    width: 3rem;
+    height: 1px;
+    background: white;
+    display: inline-block;
+    vertical-align: middle;
+}
+.txt {
+    display: flex;
+    margin-top: 4vw;
+    gap: 1rem;
+    position: relative;
+    height: 80%;
+    z-index: 100;
+}
+.right_txt {
+    height: 100%;
+    width: auto;
+}
+.right_txt > h6 {
+    color: white;
+    font-size: 1rem;
+    text-align: end;
+    letter-spacing: 2px;
+}
+
+.left_txt h1{
+    font-weight: 400;
+    font-size: 7vw;
+    color: white;
+    line-height: 13vh;
+}
+
+.icon {
+    position: absolute;
+    bottom: 4vh;
+    right: 10rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.icon i {
+    color: white;
+    font-size: 2vw;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: .7rem;
+}
+
+.right {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.img_container{
+    position: relative;
+    height: 100%;
+    width: 60%;
+    background-image: url(./img/right.avif);
+    background-size: cover;
+    background-position: center center;
+}
+
+.inner_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 16%;
+    height: 12%;
+    border-radius: 100%;
+    bottom: 9.5rem;
+    right: -1.5rem;
+    background: rgb(244, 248, 5);
+}
+
+.inner_circle i {
+    font-size: .8rem;
+}
+.rigt_linkes {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    letter-spacing: 1.5px;
+}
+.rigt_linkes h6 > a {
+    color: lightgray;
+}
+
+/* Bottom LInks */
+
+.bottom_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+.bottom_nav a {
+    color: white;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width:550px) {
+    /* navbar */
+
+    .nav_icon {
+        color: whitesmoke;
+        font-size: 2.6vw;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: .2rem 0;
+    }
+    
+    .n__right {
+        display: flex;
+        gap: 1rem;   
+    }
+    .n__right a {
+        color: whitesmoke;
+        font-size: .7rem;
+    }
+    
+    /* Main Content */
+    .content {
+        height: calc(100vh - 25vh);
+        display: flex;
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+        height: 50%;
+    }
+
+    .left_child h5 {
+        color: white;
+        font-size: 2.4vw;
+        letter-spacing: 1px;
+    }
+    
+    .left_txt h1{
+        font-weight: 400;
+        font-size: 8vw;
+        color: white;
+        line-height: 8vh;
+    }
+
+    /* right side arrow icon */
+    .icon {
+        position: absolute;
+        bottom: 2vh;
+        right: 35vw;
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .icon i {
+        color: white;
+        font-size: 3vw;
+        border: 1px solid white;
+        border-radius: 100%;
+        padding: .5rem;
+    }
+
+    /* Right Side */
+
+    .right {
+        width: 100%;
+        height: 50%;
+    }
+
+    .img_container{
+        position: relative;
+        height: 100%;
+        width: 80%;
+        background-image: url(./img/right.avif);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .inner_circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 16%;
+        height: 24%;
+        border-radius: 100%;
+        bottom: 15vh;
+        right: -4.5vh;
+        background: rgb(244, 248, 5);
+    }
+    
+    .inner_circle i {
+        font-size: .8rem;
+    }
+    
+    /* Bottom LInks */
+
+    .bottom_nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: .3rem;
+        gap: 2rem;
+    }
+
+    .bottom_nav a {
+        color: white;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+}   
+
+
